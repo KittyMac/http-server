@@ -3,7 +3,7 @@ config ?= release
 PACKAGE := http_server
 GET_DEPENDENCIES_WIITH := corral fetch
 CLEAN_DEPENDENCIES_WIITH := corral clean
-COMPILE_WITH := corral run -- ponyc
+COMPILE_WITH := corral run -- ponyc --allow-unused-vars
 
 BUILD_DIR ?= build/$(config)
 SRC_DIR ?= http/server
